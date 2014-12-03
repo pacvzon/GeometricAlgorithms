@@ -1,10 +1,6 @@
-//
-//  Util.cpp
-//  GeometricAlgorithms
-//
-//  Created by Pablo Llueca Martinez on 2/12/14.
-//  Copyright (c) 2014 Pablo Llueca Martinez. All rights reserved.
-//
-
 #include "Util.h"
 #include <cmath>
+
+double dist(Point &p1, Point &p2){
+    return sqrt(pow(p1.x - p2.x, 2) + pow(p1.y - p2.y, 2));
+}

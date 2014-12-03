@@ -11,17 +11,26 @@ struct Point{
         this->x = x;
         this->y = y;
     }
+
+    bool incident(Segment& s);
+    bool incident(Polygon &p);
 };
 
-class Segment{
+struct Segment{
     Point endleft;
     Point endright;
+
+    bool incident(Point &p);
+    bool adjacent(Segment &s);
     
     
 };
+struct Triangle{
+    Point v1, v2, v3;
+};
 
-class Polygon{
-    std::vector<Point> P;
+struct Polygon{
+    std::vector<Segment> P;
 };
 
 #endif
