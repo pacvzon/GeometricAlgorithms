@@ -4,10 +4,10 @@
 #include <vector>
 
 struct Point{
-    float x;
+    int x;
     float y;
 
-    Point(float x, float y){
+    Point(int x, int y){
         this->x = x;
         this->y = y;
     }
@@ -25,6 +25,7 @@ struct Segment{
     
     
 };
+
 struct Triangle{
     Point v1, v2, v3;
 };
